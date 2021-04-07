@@ -1,12 +1,17 @@
 import React from 'react';
 import "./App.css"
-import SpreadOperator from './example/R011_SpreadOperator';
+import PropsBoolean from './example/R019_PropsBoolean';
 
 function App() {
   return (
     <div className="appComponent">
       Hello
-      <SpreadOperator />
+      <PropsBoolean
+        trueFalse={false}
+      />
+      <PropsBoolean
+        trueFalse
+      />
     </div>
   );
 }
